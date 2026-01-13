@@ -1,5 +1,5 @@
 # Gradio UI
-gradio>=5.40.0,<6.0.0
+gradio==5.50.0
 
 # LangChain core — latest stable
 langchain>=1.1.0

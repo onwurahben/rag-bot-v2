@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 app_file: app.py
 title: "RAG PDF Chatbot"
 emoji: "📄"
@@ -44,3 +45,16 @@ Upload a PDF and ask questions. Fully cloud-based with **Pinecone vector DB** �
 ---
 
 Powered by **onwurahben**  
+=======
+title: Rag Bot V2
+emoji: 👁
+colorFrom: green
+colorTo: green
+sdk: gradio
+sdk_version: 6.3.0
+app_file: app.py
+pinned: false
+---
+
+Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+>>>>>>> 0f420d2939bca9c84664fda225f103f038241e85
