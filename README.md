@@ -1,10 +1,10 @@
 ---
+app_file: app.py
 title: "RAG PDF Chatbot"
 emoji: "📄"
 colorFrom: "blue"
 colorTo: "green"
 sdk: gradio
-app_file: main.py
 pinned: true
 ---
 
