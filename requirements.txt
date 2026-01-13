@@ -1,0 +1,28 @@
+# Gradio UI
+gradio>=5.40.0,<6.0.0
+
+# LangChain core — latest stable
+langchain>=1.1.0
+
+# LangChain community integrations (actual PyPI versions)
+langchain_community>=0.4.1
+
+# Pinecone vectorstore
+langchain-pinecone>=0.2.13
+
+# Pinecone client
+pinecone-client>=2.2.1
+
+# Groq integration
+langchain-groq>=1.1.1
+
+# Embeddings
+sentence-transformers>=2.2.2
+transformers>=4.33.2
+torch>=2.1.0
+
+# General utilities
+huggingface-hub>=0.16.4
+python-dotenv>=1.1.1
+pypdf==3.17.0
+pymupdf
