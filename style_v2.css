@@ -1,0 +1,201 @@
+/* High-End Two-Tone Dark Theme (Premium Edition) */
+:root {
+    --bg-color: #0b0f19;
+    --midnight-blue: #1e3a8a;
+    --accent-blue: #3b82f6;
+    --text-main: #f3f4f6;
+    --border-color: #1e293b;
+}
+
+/* Global Container */
+.gradio-container {
+    background-color: var(--bg-color) !important;
+    color: var(--text-main) !important;
+    font-family: 'Outfit', 'Inter', -apple-system, sans-serif !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+/* Title Styling - Premium Typography & Gradient */
+#title {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    margin: 40px auto !important;
+    background: linear-gradient(135deg, #ffffff 0%, #3b82f6 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.8rem !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.06em !important;
+    line-height: 1.1 !important;
+    text-shadow: 0 10px 40px rgba(59, 130, 246, 0.2);
+}
+
+/* ChatGPT Style Borderless Chat */
+#chatbot {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    height: auto !important;
+    min-height: 30vh !important;
+}
+
+#chatbot .wrapper {
+    overflow-y: visible !important;
+    height: auto !important;
+}
+
+/* Bubbles Styling - DISABLED, using Gradio defaults */
+/*
+#chatbot .message-wrap {
+    padding: 6px 0 !important;
+    gap: 8px !important;
+}
+
+#chatbot .message {
+    display: inline-block !important;
+    max-width: 85% !important;
+    border-radius: 12px !important;
+    padding: 10px 14px !important;
+    font-size: 0.95rem !important;
+    line-height: 1.5 !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+#chatbot .user,
+#chatbot [data-testid="user"] {
+    background-color: var(--midnight-blue) !important;
+    color: white !important;
+    align-self: flex-end !important;
+}
+
+#chatbot .bot,
+#chatbot [data-testid="bot"] {
+    background-color: #1e293b !important;
+    color: #f3f4f6 !important;
+    align-self: flex-start !important;
+}
+*/
+
+/* Unified Premium Input Area (Glassmorphism) */
+#input-group {
+    background-color: rgba(30, 41, 59, 0.7) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 24px !important;
+    padding: 0 !important;
+    margin-top: 30px !important;
+    position: relative !important;
+    box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.7) !important;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    z-index: 10 !important;
+}
+
+#input-group:focus-within {
+    border-color: rgba(59, 130, 246, 0.5) !important;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15), 0 25px 60px -10px rgba(0, 0, 0, 0.8) !important;
+    transform: translateY(-2px);
+}
+
+/* Inner Textarea clean-up */
+#input-group textarea {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: #ffffff !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    resize: none !important;
+    min-height: 120px !important;
+    width: 100% !important;
+    padding: 24px 24px 64px 24px !important;
+    outline: none !important;
+    position: relative !important;
+    z-index: 1 !important;
+    /* Keep text below button */
+}
+
+/* Floating Circular Send Button */
+.send-btn {
+    background: linear-gradient(135deg, var(--accent-blue) 0%, #2563eb 100%) !important;
+    color: white !important;
+    border-radius: 50% !important;
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px !important;
+    max-width: 48px !important;
+    min-height: 48px !important;
+    max-height: 48px !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    border: none !important;
+    position: absolute !important;
+    right: 16px !important;
+    bottom: 16px !important;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3) !important;
+    z-index: 100 !important;
+    /* Force to top */
+    pointer-events: auto !important;
+}
+
+.send-btn:hover {
+    transform: scale(1.1) rotate(5deg) !important;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4) !important;
+}
+
+.send-btn:active {
+    transform: scale(0.9) !important;
+}
+
+/* Retry Button */
+.retry-btn {
+    background: transparent !important;
+    border: 1px solid rgba(59, 130, 246, 0.3) !important;
+    color: var(--accent-blue) !important;
+    border-radius: 24px !important;
+    margin: 20px auto !important;
+    display: block !important;
+    font-size: 0.9rem !important;
+    padding: 6px 16px !important;
+    transition: all 0.2s !important;
+}
+
+.retry-btn:hover {
+    background: rgba(59, 130, 246, 0.1) !important;
+    border-color: var(--accent-blue) !important;
+}
+
+/* Sidebar Section */
+.pdf-section {
+    background: rgba(15, 23, 42, 0.6) !important;
+    backdrop-filter: blur(8px) !important;
+    padding: 24px !important;
+    border-radius: 20px !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.2);
+}

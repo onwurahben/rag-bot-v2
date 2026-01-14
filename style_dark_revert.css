@@ -1,0 +1,172 @@
+/* High-End Two-Tone Dark Theme (Stabilized) */
+:root {
+    --bg-color: #0b0f19;
+    --midnight-blue: #1e3a8a;
+    --accent-blue: #3b82f6;
+    --text-main: #f3f4f6;
+    --border-color: #1e293b;
+}
+
+/* Global Container */
+.gradio-container {
+    background-color: var(--bg-color) !important;
+    color: var(--text-main) !important;
+    font-family: 'Inter', -apple-system, system-ui, sans-serif !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+/* Title Styling - Reverted to Plain White */
+#title {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    margin: 30px auto !important;
+    color: #ffffff !important;
+    font-size: 2.22rem !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.05em !important;
+}
+
+/* ChatGPT Style Borderless Chat */
+#chatbot {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    height: auto !important;
+    min-height: 30vh !important;
+}
+
+#chatbot .wrapper {
+    overflow-y: visible !important;
+    height: auto !important;
+}
+
+/* Bubbles Styling */
+#chatbot .message-wrap {
+    padding: 10px 0 !important;
+    gap: 15px !important;
+}
+
+#chatbot .message {
+    display: inline-block !important;
+    max-width: 85% !important;
+    border-radius: 12px !important;
+    padding: 10px 14px !important;
+    font-size: 0.95rem !important;
+    line-height: 1.5 !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+#chatbot .user,
+#chatbot [data-testid="user"] {
+    background-color: var(--midnight-blue) !important;
+    color: white !important;
+    align-self: flex-end !important;
+}
+
+#chatbot .bot,
+#chatbot [data-testid="bot"] {
+    background-color: #1e293b !important;
+    color: #f3f4f6 !important;
+    align-self: flex-start !important;
+}
+
+/* Unified Modern Input Area (Reverted Colors) */
+#input-group {
+    background-color: #1e293b !important;
+    border: 2px solid #0f172a !important;
+    border-radius: 16px !important;
+    padding: 0 !important;
+    margin-top: 30px !important;
+    position: relative !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4) !important;
+    transition: all 0.3s ease !important;
+    z-index: 10 !important;
+}
+
+#input-group:focus-within {
+    border-color: var(--accent-blue) !important;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2), 0 8px 30px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Inner Textarea clean-up */
+#input-group textarea {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: #ffffff !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    resize: none !important;
+    min-height: 120px !important;
+    /* Larger area */
+    width: 100% !important;
+    padding: 18px 20px 60px 20px !important;
+    /* Extra bottom padding for floating button */
+    outline: none !important;
+}
+
+/* Floating Circular Send Button */
+.send-btn {
+    background-color: var(--accent-blue) !important;
+    color: white !important;
+    border-radius: 50% !important;
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    max-width: 44px !important;
+    min-height: 44px !important;
+    max-height: 44px !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    border: none !important;
+    position: absolute !important;
+    right: 12px !important;
+    bottom: 12px !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3) !important;
+}
+
+.send-btn:hover {
+    background-color: #2563eb !important;
+    transform: scale(1.05) !important;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4) !important;
+}
+
+.send-btn:active {
+    transform: scale(0.95) !important;
+}
+
+/* Retry Button */
+.retry-btn {
+    background: transparent !important;
+    border: 1px solid var(--midnight-blue) !important;
+    color: var(--accent-blue) !important;
+    border-radius: 20px !important;
+    margin: 15px auto !important;
+    display: block !important;
+    font-size: 0.85rem !important;
+}
+
+/* Sidebar Section */
+.pdf-section {
+    background: #0f172a !important;
+    padding: 20px !important;
+    border-radius: 15px !important;
+    border: 1px solid var(--border-color) !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 10px;
+}

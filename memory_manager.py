@@ -75,7 +75,6 @@ def wrap_chain_with_memory(chain, session_id=None, persistent=False):
         _get_history,
         input_messages_key="question",
         history_messages_key="chat_history",
-        output_messages_key="answer",
     )
 
     return runnable, session_id

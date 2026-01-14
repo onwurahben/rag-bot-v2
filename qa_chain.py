@@ -4,42 +4,38 @@ import logging
 import os
 
 # ---------------- Prompt ----------------
-prompt_template = """
-Answer like a helpful expert. 
-Be conversational, confident, and natural — not academic.
-Do NOT start with phrases like “Based on the provided context” or “It seems”.
-Just answer directly like a human.
-If the user is asking for general advice, you may reason naturally beyond the documents.
-If the user is asking for factual information, only use the documents and cite sources.
-".
+# Load prompt from external file for better maintainability
+PROMPT_FILE = os.path.join(os.path.dirname(__file__), "prompts", "qa_system_prompt.txt")
 
-Conversation History:
-{chat_history}
-
-Context:
-{context}
-
-Question:
-{question}
-
-Answer:
-"""
+def load_prompt_template():
+    if not os.path.exists(PROMPT_FILE):
+        logging.error(f"Prompt file not found at {PROMPT_FILE}")
+        raise FileNotFoundError(f"Missing prompt file: {PROMPT_FILE}")
+    
+    with open(PROMPT_FILE, "r", encoding="utf-8") as f:
+        return f.read()
 
 prompt = PromptTemplate(
     input_variables=["chat_history", "context", "question"],
-    template=prompt_template
+    template=load_prompt_template()
 )
 
 # ---------------- LLM ----------------
+_LLM_CACHE = None
+
 def get_llm():
     """
-    Returns a Groq Chat LLM instance
+    Returns a cached Groq Chat LLM instance
     """
-    return ChatGroq(
-        groq_api_key=os.getenv("GROQ_API_KEY"),
-        model="llama-3.3-70b-versatile",
-        temperature=0.2
-    )
+    global _LLM_CACHE
+    if _LLM_CACHE is None:
+        logging.info("Initializing Groq LLM...")
+        _LLM_CACHE = ChatGroq(
+            groq_api_key=os.getenv("GROQ_API_KEY"),
+            model="llama-3.3-70b-versatile",
+            temperature=0.2
+        )
+    return _LLM_CACHE
 
 
 # ---------------- Context & Citations ---------------- 
