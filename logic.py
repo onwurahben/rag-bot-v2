@@ -51,8 +51,20 @@ def retriever_qa(files, query, state, persistent_memory=False):
 
     try:
         # --- Prepare namespace per session ---
-        # TODO: id(state) is used as namespace. Switch to a persistent user ID.
-        namespace = str(id(state))
+        # --- Prepare namespace based on file content ---
+        # Generate a unique namespace hash based on the file names/paths.
+        # This ensures that if the file set changes, we get a new namespace
+        # and trigger a new indexing process.
+        if not files:
+             # Should be caught by validation above, but safe fallback
+             return None, state, ""
+             
+        # Create a stable identifier for the set of files
+        import hashlib
+        file_identifiers = sorted([getattr(f, "name", str(f)) for f in files])
+        files_string = "".join(file_identifiers)
+        namespace = hashlib.md5(files_string.encode()).hexdigest()
+        logger.info(f"Generated namespace hash: {namespace} for files: {file_identifiers}")
         
         # --- Setup/Retriever Optimization ---
         start_setup = time.time()
