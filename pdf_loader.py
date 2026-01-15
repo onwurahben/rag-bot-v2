@@ -14,7 +14,7 @@ def document_loader(file):
         logging.error(f"PDF parsing error for {path}: {e}", exc_info=True)
         raise ValueError(f"PDF could not be parsed: {e}")
 
-def split_text(docs, chunk_size=1000, chunk_overlap=200):
+def split_text(docs, chunk_size=800, chunk_overlap=300):
     splitter = RecursiveCharacterTextSplitter(
         chunk_size=chunk_size,
         chunk_overlap=chunk_overlap,
