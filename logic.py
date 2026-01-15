@@ -140,7 +140,10 @@ def retriever_qa(files, query, state, persistent_memory=False):
         # --- Combine response with citations for output ---
 
         # TODO: Switch to dynamic detection with a classifier LLM
-        show_citations = any(word in query.lower() for word in ["what", "how", "when", "who", "cost", "price", "amount"])
+        show_citations = any(word in query.lower() for word in [
+        "policy", "refund", "price", "cost", "services",
+        "terms", "scope", "contract", "what does", "list"
+    ])
       
         if show_citations:
            final_response = response + "\n\n📎 **Sources & Citations**\n" + citations
