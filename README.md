@@ -1,5 +1,5 @@
 ---
-title: "RAG PDF Chatbot"
+title: "DocQuery - RAG Document Assistant"
 emoji: "📄"
 colorFrom: "blue"
 colorTo: "green"
