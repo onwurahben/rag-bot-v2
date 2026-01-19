@@ -10,23 +10,27 @@ pinned: true
 ---
 
 
-# 📄 RAG PDF Chatbot (Groq + LCEL + Pinecone)
+# 📄 DocQuery - RAG Document Assistant (Groq + LCEL + Pinecone)
 
-Upload a PDF and ask questions. Fully cloud-based with **Pinecone vector DB** 🧠 and powered by **Groq LLM** with LCEL-style prompting.
+Upload one or more PDF documents and ask questions. Fully cloud-based with **Pinecone vector DB** 🧠 and powered by Llama 3 via **Groq API** with LCEL-style prompting.
 
 ## Features
 
-- Retrieve answers from any PDF using RAG (Retrieval-Augmented Generation)  
+- Retrieve answers from multiple PDF documents using RAG (Retrieval-Augmented Generation)  
 - Top-K chunk retrieval ensures relevant context is used  
 - Fast, actionable, and professional AI responses  
 - Embeddings powered by **sentence-transformers/all-MiniLM-L6-v2**  
-- Supports multiple PDF uploads and queries  
+- Supports multiple PDF document uploads and queries  
+- Persistent memory across sessions 
+- chat interface with retry functionality
+
 
 ## Usage
 
-1. Upload a PDF file.  
+1. Upload PDF files.  
 2. Enter your question in the textbox.  
 3. Click submit to get answers.  
+4. Click retry to get answers for the last question.  
 
 ## Notes
 
