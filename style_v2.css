@@ -39,7 +39,7 @@
     background: transparent !important;
     box-shadow: none !important;
     height: auto !important;
-    min-height: 30vh !important;
+    min-height: 0 !important;
 }
 
 #chatbot .wrapper {
@@ -47,38 +47,7 @@
     height: auto !important;
 }
 
-/* Bubbles Styling - DISABLED, using Gradio defaults */
-/*
-#chatbot .message-wrap {
-    padding: 6px 0 !important;
-    gap: 8px !important;
-}
 
-#chatbot .message {
-    display: inline-block !important;
-    max-width: 85% !important;
-    border-radius: 12px !important;
-    padding: 10px 14px !important;
-    font-size: 0.95rem !important;
-    line-height: 1.5 !important;
-    box-shadow: none !important;
-    border: none !important;
-}
-
-#chatbot .user,
-#chatbot [data-testid="user"] {
-    background-color: var(--midnight-blue) !important;
-    color: white !important;
-    align-self: flex-end !important;
-}
-
-#chatbot .bot,
-#chatbot [data-testid="bot"] {
-    background-color: #1e293b !important;
-    color: #f3f4f6 !important;
-    align-self: flex-start !important;
-}
-*/
 
 /* Unified Premium Input Area (Glassmorphism) */
 #input-group {

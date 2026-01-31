@@ -242,5 +242,59 @@
       "user": "hi",
       "bot": "Hello. Is there something I can help you with or would you like to discuss something generally?"
     }
+  ],
+  "session-a8ad37c0-8d1d-43a8-acbe-e25ef376c7ac": [
+    {
+      "user": "tell me about refunds",
+      "bot": "According to the documents, refunds are non-refundable due to the nature of implementation work, except in two cases: \n1. When work has not started, \n2. When work delivered is proven to be non-functional and unresolved within 14 days. (Section 7.2 Refunds)"
+    },
+    {
+      "user": "what about copywrite\n",
+      "bot": "\u201cI can only help with questions related to the uploaded business documents. Is there anything else I can help you with?\u201d"
+    },
+    {
+      "user": "what about payments",
+      "bot": "According to the documents, payments are non-refundable due to the nature of implementation work, except in two cases: \n1. When work has not started, \n2. When work delivered is proven to be non-functional and unresolved within 14 days (Section 7.2 Refunds). The payment structure includes setup fees, monthly retainers, usage-based API and infrastructure billing, and optional performance-based hybrid compensation."
+    },
+    {
+      "user": "i mean how they process payments\n",
+      "bot": "According to the documents, the payment structure includes setup fees, monthly retainers, usage-based API and infrastructure billing, and optional performance-based hybrid compensation (Section 7.2 Refunds and surrounding context)."
+    },
+    {
+      "user": "what are some services they provide\n",
+      "bot": "According to the documents, the services provided are related to implementation work, which includes setup, monthly retainers, usage-based API and infrastructure billing, and optional performance-based hybrid compensation (Section 7.2 Refunds and surrounding context). However, specific services are not explicitly listed."
+    },
+    {
+      "user": "i am asking about the work they provide not the payment",
+      "bot": "According to the documents, the services provided are related to implementation work. However, specific services are not explicitly listed. The documents mention that clients agree to provide timely access to systems, CRM, domains, or accounts, and approve messaging scripts before launch, which suggests that the work may involve setting up and implementing systems or messaging solutions. (Section 8. Client Responsibilities)"
+    },
+    {
+      "user": "so no idea of the functions this agency provides to clients?\n",
+      "bot": "According to the documents, the services provided by the agency are related to implementation work, but specific functions are not explicitly listed. However, it can be inferred that the work may involve setting up and implementing systems or messaging solutions, as clients are required to provide timely access to systems, CRM, domains, or accounts, and approve messaging scripts before launch (Section 8. Client Responsibilities)."
+    },
+    {
+      "user": "what exactly was discussed in section 1. of the document",
+      "bot": "According to the documents, Section 1 is not explicitly provided in the given context. However, the context provided starts with \"\u25cf \u200bLanding pages, funnels, and attribution tracking systems\u200b \u200bThis document governs relationships between the Agency and its Clients from onboarding\u200b \u200bthrough long-term support.\" which seems to be an introduction or overview of the document, but it is not clearly labeled as Section 1."
+    },
+    {
+      "user": "and no tasks were listed in that introductory section?\n",
+      "bot": "According to the provided context, the introductory section appears to be an overview of the document and the services provided, but it does not explicitly list tasks. However, it does mention various services and add-ons, such as KPI dashboards, compliance audit, AI SDR agent, sales script optimization, and funnel & landing page creation, which may imply certain tasks or responsibilities."
+    },
+    {
+      "user": "tell me about what the agency builds",
+      "bot": "According to the documents, the agency appears to be involved in building or setting up systems, messaging solutions, and possibly funnels and landing pages, as mentioned in the introductory section. Additionally, the client responsibilities section mentions that clients need to provide timely access to systems, CRM, domains, or accounts, and approve messaging scripts before launch, which suggests that the agency may be building or implementing these systems. However, specific details about what the agency builds are not explicitly provided in the given context."
+    },
+    {
+      "user": "it is actually provided in the introductory paragraph",
+      "bot": "According to the documents, the introductory paragraph mentions that the agency is involved in building or setting up systems, specifically landing pages, funnels, and attribution tracking systems."
+    },
+    {
+      "user": "what about AI outreach and follow up sequences? n8n workflows? they dont offers these?\n",
+      "bot": "According to the documents, there is no explicit mention of AI outreach and follow-up sequences or n8n workflows as part of the services provided. The provided context mentions AI-related services such as AI SDR agents and sales script optimization, but it does not specifically mention AI outreach and follow-up sequences or n8n workflows."
+    },
+    {
+      "user": "who is messi",
+      "bot": "I can only help with questions related to the uploaded business documents. Is there anything else I can help you with?"
+    }
   ]
 }

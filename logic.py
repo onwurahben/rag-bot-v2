@@ -50,7 +50,6 @@ def retriever_qa(files, query, state, persistent_memory=False):
         return None, state, ""
 
     try:
-        # --- Prepare namespace per session ---
         # --- Prepare namespace based on file content ---
         # Generate a unique namespace hash based on the file names/paths.
         # This ensures that if the file set changes, we get a new namespace
