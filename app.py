@@ -19,7 +19,7 @@ with gr.Blocks(css=css_content, theme=gr.themes.Soft(primary_hue="blue", neutral
     last_query = gr.State("")
 
     # --- App Title ---
-    gr.HTML('<h1 id="title" style="text-align: center; width: 100%; margin: 40px 0;">📄 DocQuery - RAG Document Assistant</h1>')
+    gr.HTML('<h1 id="title" style="text-align: center; width: 100%; margin: 40px 0;">📄 DocQuery: RAG Document Assistant</h1>')
 
     # --- Main Layout ---
     with gr.Row():
